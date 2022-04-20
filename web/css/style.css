@@ -1,0 +1,903 @@
+html{
+   
+}
+body {
+    background-image: url(../img/body_back.png);
+    background-attachment: fixed;
+}
+
+#btn {
+    width: 50%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 90%;
+    margin: auto;
+    padding: 0px;
+}
+
+.progress_bar {
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.7);
+    height: 0.5vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    border: 2px solid rgba(245, 245, 245, 0.7);
+}
+
+header {
+    width: 100%;
+    height: 43vh;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 18vh;
+    background-color: rgba(0, 0, 0, 0.322);
+    background-image: url(../img/vremena_goda.png);
+    background-size: 45vh;
+}
+
+.head a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.head ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+
+/*Заголовок*/
+
+.head .headline {
+    font-size: 4vw;
+    font-weight: bold;
+    width: 18vw;
+    margin-left: 3%;
+}
+
+
+/*Заголовок*/
+
+
+/*менюшка*/
+
+.menu {
+    user-select: none;
+}
+
+.tmenu {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.tmenu li {
+    text-align: center;
+    font-size: 2vw;
+    margin: auto;
+}
+
+.tmenu li p {
+    margin: 0%;
+    cursor: pointer;
+}
+
+.dmenu {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition-duration: 0.2s;
+}
+
+.dmenu li {
+    width: auto;
+    font-size: 1.3vw;
+    margin: 0vw 0.2vw 0vw;
+}
+
+
+/*менюшка*/
+
+
+/*авторизация*/
+
+.authorize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18vw;
+}
+
+.authorize p {
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 0.5vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.authorize .inp {
+    font-size: 1.3vw;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.authorize .inp input {
+    width: 96%;
+}
+
+.authorize input[type='submit'] {
+    width: 50%;
+    margin: 1vh 25% 0vh;
+}
+
+
+/*авторизация*/
+
+
+/*юзер*/
+
+.head .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 18vw;
+    margin-top: 28vh;
+    user-select: none;
+}
+
+.head .user {
+    margin-top: 25vh;
+}
+
+.icon .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.icons img {
+    width: 30%;
+    cursor: pointer;
+}
+
+.icons p {
+    text-align: center;
+    margin-top: 0px;
+    background-color: whitesmoke;
+    padding: 0.5vw;
+    border-radius: 1.5vw;
+    border: 2px solid black;
+}
+
+.functions {
+    border-radius: 0.6vw;
+    overflow: hidden;
+    transform: scaleY(0);
+    transition-duration: 0.2s;
+    transform-origin: 0 0;
+    background-color: whitesmoke;
+    align-items: center;
+    border: 0.1vw solid black;
+    width: 120%;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+.functions p{
+    width: 100%;
+    transition-duration: 0.5s;
+    margin: 0px;
+    padding: 2vh 0px 2vh;
+    box-sizing: content-box;
+}
+.functions a {
+    color: black;
+    font-size: 17px;
+    margin-left: 2vw;
+}
+.functions p:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+.functions hr {
+    color: black;
+    height: 1px;
+    background-color: black;
+    /* margin: 1.5vh 1vw 1.5vh; */
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*юзер*/
+
+
+/*страница добавления статьи*/
+
+.add {
+    margin-top: -25vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 75%;
+    border-radius: 5%/120%;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin-top: 5vh;
+}
+
+.add .add_img {
+    width: 35%;
+}
+
+.add_img img {
+    width: 100%;
+    border-radius: 5%/120%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.admin_form {
+    width: 100%;
+}
+
+.admin_form form {
+    width: 100%;
+}
+
+.text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+}
+
+.date input {
+    height: 3vh;
+    width: 40%;
+    text-align: center;
+    border-radius: 5%/120%;
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.kinds {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.kinds div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1%;
+}
+
+.kinds input[type="checkbox"] {
+    width: 2vw;
+    height: 2vw;
+}
+
+.date select {
+    width: 100%;
+    text-align: center;
+    border-radius: 5%/120%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.description {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 20px;
+}
+
+.description textarea {
+    width: 100%;
+    height: 40vh;
+    resize: none;
+    border-radius: 5%/120%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.add button {
+    margin-top: 5vh;
+    width: 30%;
+    height: 8vh;
+    box-shadow: 0px 0px 20px 5px black;
+    border: 5px inset dimgray;
+    background-color: lightgray;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.add button:hover {
+    font-weight: bold;
+}
+
+.add .scroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 80vh;
+    overflow: visible;
+}
+
+.scroll img {
+    margin: 2%;
+    width: 25%;
+}
+
+.scroll .imgs_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    height: 80%;
+}
+
+.imgs_cont .imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5%/120%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: -10px 0px 10px -10px rgba(0, 0, 0, 0.5), 10px 0px 10px -10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    width: 90%;
+    margin-top: 0.5vh;
+    transition-duration: 0.2s;
+}
+
+.imgs_cont .imgs img {
+    border-radius: 5%/120%;
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    height: 20vh;
+    width: auto;
+    margin: 2vh;
+}
+
+
+/*страница добавления статьи*/
+
+
+/*страница редактирования профиля*/
+
+.change_profile {
+    margin-bottom: 5vh;
+    width: 100%;
+}
+.up_down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.change_profile form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 1%;
+    box-shadow: 0px 0px 20px 5px black;
+}
+
+.change_profile input {
+    width: 80%;
+    margin: 1vh 0vw 1vh;
+    height: 6vh;
+    border: 5px inset dimgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.change_profile button {
+    margin-top: 3vh;
+    width: 30%;
+    height: 6vh;
+    box-shadow: 0px 0px 20px 5px black;
+    border: 5px inset dimgray;
+    background-color: lightgray;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+/*страница редактирования профиля*/
+
+
+/*страница  стилей*/
+
+.style_choce {
+    width: 100%;
+}
+
+
+/*страница  стилей*/
+
+
+/*страница регистрации*/
+
+.reg {
+    margin-top: -25vh;
+    margin-bottom: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.reg form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 1%;
+    box-shadow: 0px 0px 20px 5px black;
+}
+
+.reg div {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reg label {
+    font-size: 20px;
+}
+
+.reg input {
+    width: 80%;
+    margin: 1vh 0vw 1vh;
+    height: 6vh;
+    border: 5px inset dimgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.reg .check {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.reg .check p {
+    margin: 2vh 3vw 0px 0px;
+}
+
+
+/*страница регистрации*/
+
+
+/*основа*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -25vh;
+}
+
+main h2 {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(46, 46, 46, 0.857);
+    padding: 20px 0px;
+    color: whitesmoke;
+    outline: 10px inset rgb(255, 255, 255);
+    outline-offset: -10px;
+    margin: 0px;
+    border-radius: 1%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 1%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(170, 170, 170, 0.281);
+    overflow: hidden;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: auto;
+    width: 100%;
+    transform: scaleY(0);
+    transition-duration: 0.2s;
+    transform-origin: 0 0;
+    margin-bottom: 1vh;
+}
+
+article:hover .delete {
+    transform: scaleY(1);
+}
+
+.delete img {
+    height: 2vh;
+}
+
+article a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img {
+    height: 40vh;
+    border-radius: 5%/120%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+article p {
+    width: 100%;
+    border-radius: 1%;
+    border-radius: 5%/120%;
+    padding: 10%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    font-size: 2.5vh;
+}
+
+select {
+    border-radius: 0.6vw;
+    background-color: whitesmoke;
+    align-items: center;
+    border: 0.1vw solid black;
+    width: 20%;
+}
+
+.style_choce button {
+    border-radius: 0.6vw;
+    background-color: whitesmoke;
+    align-items: center;
+    border: 0.1vw solid black;
+    width: 10%;
+}
+
+
+/*основа*/
+
+
+/*страница с сообщениями*/
+
+.message {
+    width: 100%;
+    user-select: none;
+}
+
+.message article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.message a {
+    width: 30%;
+    margin: 1%;
+}
+
+.message .infa {
+    width: 50%;
+}
+
+.message img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+.message p {
+    margin: 1%;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 15%;
+}
+
+.status p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: content-box;
+    width: 100%;
+    border-radius: 1vw;
+    width: 100%;
+    border: 0.5vw inset dimgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    background-color: grey;
+    height: auto;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+}
+
+.change_status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 0.6vw;
+    overflow: hidden;
+    transform: scaleY(0);
+    transition-duration: 0.2s;
+    transform-origin: 0 0;
+    background-color: whitesmoke;
+    align-items: center;
+    border: 1px solid black;
+    width: 120%;
+}
+
+.change_status input {
+    background-color: none;
+    width: 100%;
+}
+
+
+/*страница с сообщениями*/
+
+
+/*страница статьи*/
+
+.page_unit {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 1%;
+    box-shadow: 0px 0px 20px 5px black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.page_unit .img {
+    width: 40%;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 5%/120%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.page_unit .mass {
+    margin-left: 2vw;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.page_unit .inf {
+    width: 45%;
+    border-radius: 1%;
+    border-radius: 5%/120%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 20%;
+    font-weight: bold;
+}
+
+.mass .textarea {
+    width: 100%;
+    height: auto;
+    resize: none;
+    border-radius: 1%;
+    border-radius: 5%/120%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+.mass button {
+    border: 5px inset dimgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    background-color: grey;
+    font-size: 2vw;
+    color: whitesmoke;
+}
+
+
+/*страница статьи*/
+
+
+/*страница биографии*/
+
+.biography {
+    width: 100%;
+}
+
+.biography form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 1%;
+    box-shadow: 0px 0px 20px 5px black;
+}
+
+.biography .add_img {
+    width: 30%;
+    margin: 0px;
+}
+
+.biography img {
+    width: 100%;
+    border-radius: 5%/120%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.biography .text {
+    width: 60%;
+}
+
+.biography .description {
+    height: 100%;
+}
+
+.biography .text textarea {
+    height: 100%;
+    border-radius: 5%/120%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border: none;
+}
+
+.biography .text p {
+    width: 100%;
+    height: auto;
+    resize: none;
+    border-radius: 5%/120%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+
+/*страница биографии*/
+
+footer {
+    width: 98%;
+    background-color: rgb(46, 46, 46);
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    padding: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+}
